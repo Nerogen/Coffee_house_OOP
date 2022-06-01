@@ -41,7 +41,7 @@ float CoffeeHouse::getAvgRating()
     return (float)ratingSum / (float)ratingAmount;
 }
 
-void CoffeeHouse::addDessert(Product dessert, int amount)
+void CoffeeHouse::addDessert(Product& dessert, int amount)
 {
     dessertMap[dessert.getName()] = amount;
     menuList.push_back(dessert.getName());
