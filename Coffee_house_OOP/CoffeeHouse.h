@@ -17,7 +17,7 @@ class CoffeeHouse
 public:
     CoffeeHouse();
     void run();
-    void addDessert(Product dessert, int amount);
+    void addDessert(Product& dessert, int amount);
     void addRecipe(Product& product, Recipe& recipe);
     void addIngredient(Ingredient& ingredient, int amount);
     float getAvgRating();
